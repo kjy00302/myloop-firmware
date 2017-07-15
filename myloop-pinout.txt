@@ -1,0 +1,31 @@
+(핀 번호는 아두이노 기준입니다)
+주 포트
+
+┌──┐┌──┐0V 0V 0V 0V┌───┐┌───┐┌───┐┌───┐0V 0V 0V 0V 0V 0V 0V 0V 0V 09 13(SCK)
+│DC││0V│5V 5V 5V 5V│MA1││MA2││MB2││MB1│5V 5V 5V 5V 5V 5V 5V 5V 5V 05 12(MISO)
+└──┘└──┘06 05 09 10└───┘└───┘└───┘└───┘A6 A7 08 04 07 02 A4 A5 10 06 11(MOSI) R(RESET)
+
+그 외
+    왼쪽버튼 - A6
+    오른쪽버튼 - A7
+    리셋 - 리셋버튼
+    A3 - 버저
+
+TB6612FNG
+MotA
+    PWM - VCC
+    IN2 - 12
+    IN1 - 11
+    OUT1 - MA1
+    OUT2 - MA2
+MotB
+    PWM - VCC
+    IN1 - 3
+    IN2 - 13
+    OUT2 - MB2
+    OUT1 - MB1
+
+MAX7219
+    DIN - A0
+    LOAD - A1
+    CLK - A2
